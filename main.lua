@@ -3,41 +3,65 @@ RegisterNetEvent('Night:weights')
 AddEventHandler('Night:weights', function()
 
 	
-	exports.rprogress:Custom({
-		Duration = 30000,
-		Label = "You're doing weights...",
-		Animation = {
-			scenario = "world_human_muscle_free_weights",
-		},
-		DisableControls = {
-			Mouse = false,
-			Player = true,
-			Vehicle = true
-		}
-	})
+    TriggerEvent("mythic_progbar:client:progress", {
+        name = "unique_action_name",
+        duration = 30000,
+        label = "Ngegym Cuy",
+        useWhileDead = false,
+        canCancel = false,
+        controlDisables = {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        },
+        animation = {
+            animDict = "missheistdockssetup1clipboard@idle_a",
+            anim = "idle_a",
+        },
+        prop = {
+            model = "prop_paper_bag_small",
+        }
+    }, function(status)
+        if not status then
+            -- Do Something If Event Wasn't Cancelled
+        end
+    end)
 	Citizen.Wait(30000)
-	exports['mythic_notify']:SendAlert('inform', 'ejercicio terminado')
+	exports['mythic_notify']:SendAlert('inform', 'Ngerasa enak Cuy')
    
 end)
 
 RegisterNetEvent('Night:barras')
 AddEventHandler('Night:barras', function()
 
-	exports.rprogress:Custom({
-		Duration = 30000,
-		Label = "You're doing chin ups...",
-		Animation = {
-			scenario = "prop_human_muscle_chin_ups",
-		},
-		DisableControls = {
-			Mouse = false,
-			Player = true,
-			Vehicle = true
-		}
-	})
+    TriggerEvent("mythic_progbar:client:progress", {
+        name = "unique_action_name",
+        duration = 30000,
+        label = "Ngegym Cuy",
+        useWhileDead = false,
+        canCancel = false,
+        controlDisables = {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        },
+        animation = {
+            animDict = "missheistdockssetup1clipboard@idle_a",
+            anim = "idle_a",
+        },
+        prop = {
+            model = "prop_paper_bag_small",
+        }
+    }, function(status)
+        if not status then
+            -- Do Something If Event Wasn't Cancelled
+        end
+    end)
 
 	Citizen.Wait(30000)
-	exports['mythic_notify']:SendAlert('inform', 'ejercicio terminado')
+	exports['mythic_notify']:SendAlert('inform', 'Ngerasa enak cuy')
    
 end)
 
@@ -65,42 +89,66 @@ end)
 RegisterNetEvent('Night:yoga')
 AddEventHandler('Night:yoga', function()
 
-	exports.rprogress:Custom({
-		Duration = 30000,
-		Label = "You're doing Yoga...",
-		Animation = {
-			scenario = "world_human_yoga",
-		},
-		DisableControls = {
-			Mouse = false,
-			Player = true,
-			Vehicle = true
-		}
-	})
+    TriggerEvent("mythic_progbar:client:progress", {
+        name = "unique_action_name",
+        duration = 30000,
+        label = "Ngegym Cuy",
+        useWhileDead = false,
+        canCancel = false,
+        controlDisables = {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        },
+        animation = {
+            animDict = "missheistdockssetup1clipboard@idle_a",
+            anim = "idle_a",
+        },
+        prop = {
+            model = "prop_paper_bag_small",
+        }
+    }, function(status)
+        if not status then
+            -- Do Something If Event Wasn't Cancelled
+        end
+    end)
 
 	Citizen.Wait(30000)
-	exports['mythic_notify']:SendAlert('inform', 'ejercicio terminado')
+	exports['mythic_notify']:SendAlert('inform', 'Ngerasa enak cuy')
    
 end)
 
 RegisterNetEvent('Night:abdomen')
 AddEventHandler('Night:abdomen', function()
 
-	exports.rprogress:Custom({
-		Duration = 30000,
-		Label = "You're doing abs...",
-		Animation = {
-			scenario = "world_human_sit_ups",
-		},
-		DisableControls = {
-			Mouse = false,
-			Player = true,
-			Vehicle = true
-		}
-	})
+    TriggerEvent("mythic_progbar:client:progress", {
+        name = "unique_action_name",
+        duration = 30000,
+        label = "Ngegym Cuy",
+        useWhileDead = false,
+        canCancel = false,
+        controlDisables = {
+            disableMovement = true,
+            disableCarMovement = true,
+            disableMouse = false,
+            disableCombat = true,
+        },
+        animation = {
+            animDict = "missheistdockssetup1clipboard@idle_a",
+            anim = "idle_a",
+        },
+        prop = {
+            model = "prop_paper_bag_small",
+        }
+    }, function(status)
+        if not status then
+            -- Do Something If Event Wasn't Cancelled
+        end
+    end)
 
 	Citizen.Wait(30000)
-	exports['mythic_notify']:SendAlert('inform', 'ejercicio terminado')
+	exports['mythic_notify']:SendAlert('inform', 'Ngerasa enak cuy')
    
 end)
 
